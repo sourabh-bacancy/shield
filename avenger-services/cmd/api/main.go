@@ -2,6 +2,7 @@ package main
 
 import (
 	"avenger/cmd/api/handler"
+	"fmt"
 	"log"
 	"net/http"
 
@@ -24,5 +25,6 @@ func main() {
 		AllowCredentials: true,
 	})
 
+	fmt.Println("listening on port " + port)
 	log.Fatal(http.ListenAndServe(port, c.Handler(router)))
 }
