@@ -1,8 +1,8 @@
 package controller
 
 import (
-	"avenger/cmd/api/handler/controller/model"
-	"avenger/cmd/api/handler/controller/util"
+	"avenger/cmd/api/handler/model"
+	"avenger/cmd/api/handler/util"
 	"encoding/json"
 	"net/http"
 	"strings"
